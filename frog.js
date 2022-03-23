@@ -18,7 +18,10 @@ function setup(){
     background(200);
     textSize(20);
   
+    randomIndex = int(random(frogs.length));
 
+    console.log(frogs[randomIndex].name);
+    text(frogs[randomIndex].name, 50, 50);
     text("click for good vibes!", 50, 50);
 
     
