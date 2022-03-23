@@ -4,8 +4,7 @@ function setup(){
     createCanvas(600,600);
     background(200);
 
-    frogs[1] = "grass frog"
-    console.log(frogs);
+    console.log(frogs[int(random(5))]);
 
 }
 
