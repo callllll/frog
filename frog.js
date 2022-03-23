@@ -46,7 +46,7 @@ function mousePressed(){
     imageMode(CENTER);
     let randomFrog = random(frogs);
     randomFrog.resize(300,300);
-    image(randomfrog, width/2, height/2);
+    image(randomFrog, width/2, height/2);
 
     randomQuote();
 }
