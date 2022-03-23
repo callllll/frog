@@ -41,6 +41,8 @@ function draw(){
 
 function mousePressed(){
     background(color(random(255,253,208), random(237,231,221)));
+    fill("#ffffff");
+    square(125, 125, 350, 20);
     imageMode(CENTER);
     let randomFrog = random(frogs);
     randomFrog.resize(300,300);
