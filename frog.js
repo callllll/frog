@@ -1,4 +1,5 @@
-let frogs = [{name: "frog1"},
+let frogs = 
+[{name: "frog1"},
  {name: "frog2"},
  {name: "frog3"},
  {name: "frog4"},
@@ -9,9 +10,7 @@ let frogs = [{name: "frog1"},
  {name: "frog9"},
  {name: "frog10"}];
 
-let randomizer
-let animation = false;
-let frogpics = [];
+let randomIndex;
 
 function preload(){
 
@@ -24,7 +23,7 @@ function setup(){
     createCanvas(600,600);
     background(200);
     textSize(20);
-    imageMode(CENTER);
+  
 
     text("click for good vibes!", 50, 50);
 
@@ -33,17 +32,16 @@ function setup(){
 
 function draw(){
 
-    if(animation == true){
-        image(frogs[0], width/2, height/2);
+
     }
 }
 
-function randomizer(){
-    animation = false;
+function mousePressed(){
+
     if (frogs[0]){
         background(random(200,255));
         randomIndex = int(random(frogs.length));
-        text(frogs[randomIndex].normalize, 50, 50);
+        text(frogs[randomIndex].name, 50, 50);
         frogs.splice(randomIndex, 1);
     }
 }
