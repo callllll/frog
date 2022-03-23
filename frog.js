@@ -12,12 +12,6 @@ let frogs =
 
 let randomIndex;
 
-function preload(){
-
-    for (let i = 0; i <= 10; i++){
-        frogpics[i] = loadImage("assets/frogs" + i + ".JPG")
-    }
-}
 
 function setup(){
     createCanvas(600,600);
@@ -31,10 +25,7 @@ function setup(){
 }
 
 function draw(){
-
-
     }
-}
 
 function mousePressed(){
 
