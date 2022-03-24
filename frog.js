@@ -46,6 +46,13 @@ function draw() {
   if (buttonPressed == true){
     index =int(random(15));
     text(frogQuote[index].name,mouseX,mouseY);
+    loadImage('frog2.jpg', img=> {
+        image(img, 0, 0);
+    });
+    loadImage('frog3.jpg', img=> {
+        image(img, 1510, 0);
+    });
+
    buttonPressed = false;
   }
 }
